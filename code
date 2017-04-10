@@ -1,0 +1,6 @@
+// jetpackカスタム投稿タイプSNS共有
+
+function cpt_publicize_share() {
+add_post_type_support( 'news', 'publicize' );
+}
+add_action( 'init', 'cpt_publicize_share' );
